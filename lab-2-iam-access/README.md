@@ -34,7 +34,7 @@ Simulate a real-world support ticket from a managed service client reporting tha
 - Response Type: Public Reply
 
 - Subject: Ticket ID: 928374
-- Message: Hi Jane, thanks for raising this. I have investigated the new employees IAM configurtion and confirmed they were correctly added to the Finance Department user group. However, this group did not have a policy allowing access to the Billing Dashboard. I have added a read only permission to allow access to the Billing Dashboard for users in this group - including the new employee. Could you please have them log in and confirm they now have access to the Billing Dashboard. Thanks, Olly.
+- Message: Hi Jane, thanks for raising this. I have investigated the new employees IAM configuration and confirmed they were correctly added to the Finance Department user group. However, this group did not have a policy allowing access to the Billing Dashboard. I have added a read only permission to allow access to the Billing Dashboard for users in this group - including the new employee. Could you please have them log in and confirm they now have access to the Billing Dashboard. Thanks, Olly.
 
 #### Internal Ticket Documentation
 - Ticket ID: 928374
@@ -46,10 +46,11 @@ Simulate a real-world support ticket from a managed service client reporting tha
 - Client Reported: New finance team member unable to access AWS Billing Dashboard despite being added to the correct IAM group.
 - Issue Identified: The Finance Department IAM group did not have the AWSBillingReadOnlyAccess policy attached.
 - Steps Taken:
-  1. Assumed the cross-account SupportEngineer role within the organisation
-  2. Located the user in AWS IAM and confirmed their account had been added to the FinanceDepartment IAM group.
-  3. Checked the IAM group's attached policies and found no billing permissions assigned.
-  4. Attached AWSBillingReadOnlyAccess policy to the FinanceDepartment IAM group.
-  5. Verified the policy had been attached to the users account.
-  6. Asked the client to confirm they now had access to the Billing Dashboard.
-- Outcome: Client now has access to Billing Dashboard. Client notified and confirmed resolution.
+1. Assumed the cross-account SupportEngineer role within the organisation
+2. Located the user in AWS IAM and confirmed their account had been added to the FinanceDepartment IAM group.
+3. Checked the IAM group's attached policies and found no billing permissions assigned.
+4. Attached AWSBillingReadOnlyAccess policy to the FinanceDepartment IAM group.
+5. Verified the policy had been attached to the users account.
+6. Asked the client to confirm they now had access to the Billing Dashboard.
+- Outcome: Client confirmed that the user was able to access the AWS Billing Dashboard successfully after the permissions update. Ticket closed.
+
