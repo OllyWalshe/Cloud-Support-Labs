@@ -50,12 +50,12 @@ This lab simulates a real-world Tier 1 support scenario where a small business c
 - Client Reported: Website unreachable post launch
 - Issue Identified: Security group attached to EC2 Instance did not include inbound rule for HTTP Port 80.
 - Steps Taken:
-  1. Verfied instance state and IP
-  2. Confirmed web server was active via SSH
-  3. Analysed security group permissions and found no inbound rule for Port 80.
-  4. Edited security group to include:
-     - Type: HTTP
-     - Port: 80
-     - Source: 0.0.0.0/0
-  5. Retested access to website via browser and confirmed full functionality.
+1. Verfied instance state and IP
+2. Confirmed web server was active via SSH
+3. Analysed security group permissions and found no inbound rule for Port 80.
+4. Edited security group to include:
+  - Type: HTTP
+  - Port: 80
+  - Source: 0.0.0.0/0
+5. Retested access to website via browser and confirmed full functionality.
 - Outcome: Website fully reachable at time of closure. Client notified and confirmed resolution.
