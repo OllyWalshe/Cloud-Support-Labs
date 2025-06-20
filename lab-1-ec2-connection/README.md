@@ -1,5 +1,3 @@
-# Cloud-Support-Labs
-A collection of labs for my portfolio as an aspiring Cloud Support Engineer.
 ## Lab 1 - EC2 Access and Connectivity Troubleshooting (simulated ticket)
 ### Objective
 This lab simulates a real-world Tier 1 support scenario where a small business client reports that their newly launched WordPress website is inaccessible. Acting as a Cloud Support Engineer within an MSP, I investigated and resolved the issue, communicated the outcome to the client, and documented the ticket internally.
