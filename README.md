@@ -2,8 +2,7 @@
 A collection of labs for my portfolio as an aspiring Cloud Support Engineer.
 ## Lab 1 - EC2 Access and Connectivity Troubleshooting (simulated ticket)
 ### Objective
-Simulate a 1st line support ticket where a client of the MSP I work at as a Cloud Support Engineer is reporting an issue with accessing their Wordpress website that has recently been laucnhed in EC2.
-I will take ownership of the ticket, investigate and solve the issue, communicate with the client and record my works in the ticketing system.
+This lab simulates a real-world Tier 1 support scenario where a small business client reports that their newly launched WordPress website is inaccessible. Acting as a Cloud Support Engineer within an MSP, I investigated and resolved the issue, communicated the outcome to the client, and documented the ticket internally.
 ### Skills and Tools Used
 - AWS EC2
 - Security Groups
@@ -13,7 +12,8 @@ I will take ownership of the ticket, investigate and solve the issue, communicat
 - Cloud Support Workflow
 
 ### Steps Taken
-1. I recieved the ticket and noted that our client can not access their website on the internet. I then communicated to the client I had recieved their ticket and was actively working to solve the issue.
+
+1. I recieved the ticket and noted that our client was unable to access their website on the internet. I then communicated to the client I had recieved their ticket and was actively working to solve the issue.
 2. I attempted to load the website on the internet using the instances public IP address which was unsuccessful - Blank loading screen.
 3. I attempted to ssh in to the instance using a terminal which was successful - confirms the server is live.
 4. In EC2 I checked the security group rules for the instance and found there was no inbound rule allowing access from port 80.
@@ -21,6 +21,7 @@ I will take ownership of the ticket, investigate and solve the issue, communicat
 6. I re-attempted to access the website on the internet using the instances public IP address which was successful
 7. I contacted the client to inform them the issue was solved and asked them to attempt to connect to the website to confirm they could connect over the internet.
 8. I documented root cause, solution and next steps using the ticketing system.
+
 ### Ticket Simulation
 #### Inbound Ticket
 - Ticket ID: 249837
@@ -49,7 +50,7 @@ I will take ownership of the ticket, investigate and solve the issue, communicat
 - Ticket Type: Incident - EC2 Network Access
 
 - Client Reported: Website unreachable post launch
-- Issue Identified: Security group attatched to EC2 Instance did not include inbound rule for HTTP Port 80.
+- Issue Identified: Security group attached to EC2 Instance did not include inbound rule for HTTP Port 80.
 - Steps Taken:
   1. Verfied instance state and IP
   2. Confirmed web server was active via SSH
@@ -59,4 +60,4 @@ I will take ownership of the ticket, investigate and solve the issue, communicat
      - Port: 80
      - Source: 0.0.0.0/0
   5. Retested access to website via browser and confirmed full functionality.
-- Outcome: Website fully reachable ay time of closure. Client notified and confirmed resolution.
+- Outcome: Website fully reachable at time of closure. Client notified and confirmed resolution.
