@@ -10,7 +10,8 @@ Welcome to my hands-on lab portfolio designed to showcase my practical skills as
 |-----|-------------|----------------|------|
 | 1️⃣ | EC2 Access and Connectivity Troubleshooting | EC2, SSH, Security Groups, Client Communication | [View Lab 1](lab-1-ec2-connection) |
 | 2️⃣ | IAM Permissions – Billing Dashboard Access | IAM Users, Groups, Policies, Role Delegation | [View Lab 2](lab-2-iam-access) |
-| 🔜 | [Next Lab Placeholder] | [To be added] | Coming soon |
+| 3️⃣ | S3 Access Denied – Bucket Policy Conflict | IAM, S3, Bucket Policies, Access Troubleshooting | [View Lab 3](lab-3-s3-access-denied/README.md) |
+
 
 ---
 
