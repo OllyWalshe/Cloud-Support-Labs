@@ -11,6 +11,7 @@ Welcome to my hands-on lab portfolio designed to showcase my practical skills as
 | 1️⃣ | EC2 Access and Connectivity Troubleshooting | EC2, SSH, Security Groups, Client Communication | [View Lab 1](lab-1-ec2-connection) |
 | 2️⃣ | IAM Permissions – Billing Dashboard Access | IAM Users, Groups, Policies, Role Delegation | [View Lab 2](lab-2-iam-access) |
 | 3️⃣ | S3 Access Denied – Bucket Policy Conflict | IAM, S3, Bucket Policies, Access Troubleshooting | [View Lab 3](lab-3-s3-access-denied/README.md) |
+| 4️⃣ | Unexpected Billing Spike – EC2 Investigation & CloudWatch Alarm | Billing, EC2, Cost Explorer, CloudWatch, Proactive Support | [View Lab 4](lab-4-unexpected-billing-spike/README.md) |
 
 
 ---
